@@ -34,4 +34,11 @@ class ApplicationController < Sinatra::Base
     @recipe.save
     redirect '/recipes/:id'
   end
+  
+  get '/recipes/new' do
+    erb :new
+  end
+  
+  post '/recipes/new' do
+    @recipe = Recipe.create(params)
 end
