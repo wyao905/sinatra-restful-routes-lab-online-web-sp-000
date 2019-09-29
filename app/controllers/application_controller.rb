@@ -14,4 +14,6 @@ class ApplicationController < Sinatra::Base
     @recipe = Recipe.find(params[:id])
     erb :show
   end
+  
+  post '/'
 end
