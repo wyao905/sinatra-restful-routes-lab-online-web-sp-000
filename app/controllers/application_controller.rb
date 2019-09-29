@@ -15,5 +15,5 @@ class ApplicationController < Sinatra::Base
     erb :show
   end
   
-  post '/'
+  delete '/'
 end
