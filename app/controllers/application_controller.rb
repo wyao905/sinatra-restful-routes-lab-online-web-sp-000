@@ -20,4 +20,7 @@ class ApplicationController < Sinatra::Base
     @recipe.delete
     redirect '/recipes'
   end
+  
+  get '/recipes/:id/edit' do
+    
 end
